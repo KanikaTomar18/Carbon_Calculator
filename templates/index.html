@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>🌿 EcoTracker</h2>
+    </aside>
+
+    <main class="main-content">
+      <div class="container">
+        <h1>Carbon Footprint Calculator 🌱</h1>
+
+        <label>Electricity Usage (kWh):</label>
+        <input type="number" id="electricity" placeholder="e.g., 100"><br>
+
+        <label>Travel (km):</label>
+        <input type="number" id="travel" placeholder="e.g., 50"><br>
+
+        <label>Phone Use (hrs/day):</label>
+        <input type="number" id="phone" placeholder="e.g., 3"><br>
+
+        <label>Laptop Use (hrs/day):</label>
+        <input type="number" id="laptop" placeholder="e.g., 5"><br>
+
+        <button onclick="calculateFootprint()">Calculate</button>
+<br><br>
+        <h2 id="result"></h2>
+        <canvas id="carbonChart" width="400" height="00"></canvas>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
