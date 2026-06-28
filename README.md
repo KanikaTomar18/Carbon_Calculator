@@ -37,7 +37,7 @@ The goal of this project is to raise awareness about environmental sustainabilit
 Installation
 
 ```bash
-git clone https://github.com/yourusername/carbon-footprint-calculator.git
+git clone https://github.com/KanikaTomar18/carbon-footprint-calculator.git
 
 cd carbon-footprint-calculator
 
